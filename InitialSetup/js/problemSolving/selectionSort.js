@@ -25,7 +25,9 @@ console.log(selectionSort([5,9,2,4,3,1,7,6,8]));
 /**
  * BIG O of Selection sort
  * 
- * It's O(n**2)
+ * Spacecomplexity - O(1) 
+ * bestcase - O(n**2)
+ * worst && average case - O(n**2)
  * It's something better than Bubble sort as selection sort only swaps one time for one loop.
  */
 
