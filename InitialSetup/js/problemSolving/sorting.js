@@ -209,4 +209,14 @@ console.log(optimizedBubbleSort([5,9,2,4,3,1,7,6,8]));
 
 // In the above case, noSwap = true because there is no swap took place.
 // the output is same as previous output when i = 5.
-// Here we break the loop as the array is sorted. 
+// Here we break the loop as the array is sorted.
+
+
+
+
+/**
+ * BIG O of BUBBLE SORT
+ * 
+ * If we know the data is already sorted or it's mostly sorted , then it's => O(n)
+ * But mostly in most of the cases it's => O(n**2);
+ */
