@@ -48,6 +48,9 @@ console.log(insertionSort([5,9,2,4,3,1,7,6,8]));
  * 
  * bestcase - O(n)
  * worst && average case - O(n**2)
+ * 
+ * Spacecomplexity - O(1) 
+ * 
  */
 
 
