@@ -36,6 +36,7 @@ function mergeSort(arr) {
 }
 console.log(mergeSort([9,5,6,3,2,1,8,4,7]));
 
+// calculations behind code
 // middlevalue = 4;
 // left = mergeSort(arr.slice(0, 4));
 // left = mergeSort([9,5,6,3]);
@@ -61,3 +62,9 @@ console.log(mergeSort([9,5,6,3,2,1,8,4,7]));
 //similarly right = [1,2,4,7,8];
 // return merge(left,right)
 // [1,2,3,4,5,6,7,8,9];                         
+
+/**
+ * BIG O of Merge Sort
+ * Time Complexity  - O(n log n)
+ * Space Complexity - O(n)
+ */
