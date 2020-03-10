@@ -106,6 +106,21 @@ class DoublyLinkedList {
         }
         return false;
     }
+
+    insert(index, val) {
+        if(index < 0 || index > this.length) return false;
+        if(index === 0) return this.unShift(val);
+        if(index === this.length) return this.push(val);
+        var newNode = new Node(val);
+        var node = this.get(index - 1);
+        var next = node.next;
+        node.next = newNode;
+        newNode.prev = node;
+        newNode.next = next;
+        next.prev = newNode;  
+        this.length++;
+        return true;
+    }
 }
 
 var list = new DoublyLinkedList();
@@ -119,7 +134,9 @@ list.push("Five");
 //console.log(list.shift());
 //console.log(list);
 //console.log(list.unShift("Six"));
-console.log(list.get(0));
-console.log(list.set(4,"UpdatedValue"));
+//console.log(list.get(0));
+//console.log(list.set(4,"UpdatedValue"));
+//console.log(list);
+console.log(list.insert(1, "InsertedValue"));
 console.log(list);
 
