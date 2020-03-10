@@ -1,4 +1,7 @@
 /**
+ * Get
+ */
+/**
  * UnShifting
  */
 class Node {
@@ -69,12 +72,24 @@ class SinglyLikedList {
         this.length++;
         return this;
     }
+
+    get(index) {
+        if(index < 0 || index >= this.length) return null;
+        var counter = 0;
+        var current = this.head;
+        while(counter !== index) {
+            current = current.next;
+            counter++;
+        }
+        return current;
+    }
 }
 
 var list = new SinglyLikedList();
-// list.push("Hello");
-// list.push("World!");
-// list.push("Hai");
-// console.log(list);
-console.log(list.unshift("AddMeToTop"));
+list.push("Hello");
+list.push("World!");
+list.push("Hai");
+console.log(list);
+console.log(list.get(2));
+
 
