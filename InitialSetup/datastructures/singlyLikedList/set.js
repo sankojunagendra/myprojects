@@ -1,5 +1,5 @@
 /**
- * Get
+ * Set
  */
 
 class Node {
@@ -81,6 +81,15 @@ class SinglyLikedList {
         }
         return current;
     }
+
+    set(index, val) {
+        var foundNode = this.get(index);
+        if(foundNode) {
+            foundNode.val = val;
+            return true;
+        }
+        return false;
+    }
 }
 
 var list = new SinglyLikedList();
@@ -89,5 +98,5 @@ list.push("World!");
 list.push("Hai");
 console.log(list);
 console.log(list.get(2));
-
-
+console.log(list.set(1, "UpdatedValue"));
+console.log(list);
