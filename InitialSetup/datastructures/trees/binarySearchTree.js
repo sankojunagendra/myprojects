@@ -39,6 +39,21 @@ class BinarySearchTree {
             }
         }
     }
+
+    find(val) {
+        if(this.root === null) return false;
+        var current = this.root;
+        while(true) {
+            if(val === current.val) return true;
+            if(val < current.val) {
+                if(current.left === null) return false;
+                current = current.left;
+            } else {
+                if(current.right === null) return false;
+                current = current.right
+            }
+        }
+    }
 }
 
 var tree = new BinarySearchTree();
@@ -49,4 +64,10 @@ tree.insert(11);
 tree.insert(2);
 tree.insert(16);
 tree.insert(9);
-console.log(tree);
+// console.log(tree);
+console.log(tree.find(5));
+
+/**
+ * BIG O
+ * Insertion and searching =>  O(log n)
+ */
