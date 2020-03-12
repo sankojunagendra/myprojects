@@ -69,5 +69,5 @@ console.log(tree.find(5));
 
 /**
  * BIG O
- * Insertion and searching =>  O(log n)
+ * Insertion and searching =>  O(log n) but not for worst cases where tree expands in only one direction (Ex: from rightside)
  */

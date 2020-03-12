@@ -32,3 +32,17 @@
   * - minimum element in a min-heap) and restoring the properties is called "down-heap" (also known as 
   * "Bubble-down", "percolate-down","sift-down","trickle-down","heapify-down","cascade-down" and "extract-min/max")
   */
+
+/**
+ * BIG O :-
+ * For both Min and Max tree
+ * Insertion - O(log n)
+ * removal - O(log n)
+ * search - O(n)
+ */
+
+/** RECAP
+ * 1. Binary Heaps are very useful data structures for sorting, and implementing other data structures like priority queues.
+ * 2. Binary Heaps are either MaxBinaryHeaps or MinBinaryHeaps with parents either being smaller or larger than their children.
+ * 3. With just a little bit of math, we can represent heaps using arrays!
+ */
