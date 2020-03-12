@@ -107,6 +107,7 @@ console.log(someAlternateHash("cyan",13));
 
 /**
  * BIG O
+ *  Average Case:-
  * 
  * insert - O(1)
  * Deletion - O(1)
