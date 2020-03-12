@@ -1,5 +1,5 @@
 /**
- * Queue
+ * Queue -> FIFO (First IN First OUT)
  */
 class Node {
     constructor(val) {

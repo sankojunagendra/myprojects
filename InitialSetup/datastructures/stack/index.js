@@ -1,5 +1,5 @@
 /**
- * Stack
+ * Stack -> LIFO (Last IN First OUT)
  */
 class Node {
     constructor(val) {
@@ -14,7 +14,7 @@ class Stack {
         this.last = null;
         this.size = 0;       
     }
-    push(val) {
+    push(val) {          // unShifting
         var newNode = new Node(val);
         if(!this.first) {
             this.first = newNode;
@@ -27,7 +27,7 @@ class Stack {
         return this.size++;
     }
 
-    pop() {
+    pop() {   // shifting
         if(!this.first) return null;
         var temp = this.first; 
         if(this.first === this.last) {
